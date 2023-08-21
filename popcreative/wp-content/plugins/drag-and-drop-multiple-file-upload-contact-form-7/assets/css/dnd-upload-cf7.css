@@ -1,0 +1,200 @@
+.dnd-icon-remove.deleting {
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    top: -3px
+}
+
+.dnd-icon-remove.deleting:after {
+    display: none !important
+}
+
+.wpcf7-drag-n-drop-file.d-none {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0
+}
+
+.dnd-upload-status {
+    display: flex;
+    padding: 4px 0;
+    align-items: center;
+    position: relative
+}
+
+.dnd-upload-status .dnd-upload-image {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #a5a5a5;
+    text-align: center;
+    border-radius: 100%;
+    position: relative
+}
+
+.dnd-upload-status .dnd-upload-image span.file {
+    background-image: url(data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9JzE4JyBoZWlnaHQ9JzIzJyB2aWV3Qm94PScwIDAgMTggMjMnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTEyLjU2OSAwLjY1OTU3NkgwLjVWMjNIMThWNi4wOTA1M0wxMi41NjkgMC42NTk1NzZaTTEyLjc4NzIgMS45MzA3NUwxNi43Mjg4IDUuODcyMzRIMTIuNzg3MlYxLjkzMDc1Wk0xLjI0NDY4IDIyLjI1NTNWMS40MDQyNkgxMi4wNDI2VjYuNjE3MDJIMTcuMjU1M1YyMi4yNTUzSDEuMjQ0NjhaJyBmaWxsPScjNUM1QjVCJy8+PC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 21px;
+    width: 16px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+.dnd-upload-status .dnd-upload-details {
+    padding-left: 10px;
+    width: calc(100% - 40px)
+}
+
+.dnd-upload-status .dnd-upload-details .name {
+    color: #016d98;
+    padding: 4px 0;
+    padding-right: 60px;
+    display: flex
+}
+
+.dnd-upload-status .dnd-upload-details .name span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-right: 10px
+}
+
+.dnd-upload-status .dnd-upload-details .name em {
+    color: #444242;
+    font-weight: 700
+}
+
+.dnd-upload-status .dnd-upload-details .remove-file {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+    opacity: 1
+}
+
+.dnd-upload-status .dnd-upload-details .remove-file span:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzUnIGhlaWdodD0nMzUnIHZpZXdCb3g9JzAgMCAzNSAzNScgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMTcuNSAwQzcuODM0OTkgMCAwIDcuODM0OTkgMCAxNy41QzAgMjcuMTY1IDcuODM0OTkgMzUgMTcuNSAzNUMyNy4xNjUgMzUgMzUgMjcuMTY1IDM1IDE3LjVDMzQuOTg4OCA3LjgzOTY1IDI3LjE2MDQgMC4wMTEyMTk4IDE3LjUgMFpNMTcuNSAzMy44NzFDOC40NTg1NyAzMy44NzEgMS4xMjkwMyAyNi41NDE0IDEuMTI5MDMgMTcuNUMxLjEyOTAzIDguNDU4NTcgOC40NTg1NyAxLjEyOTAzIDE3LjUgMS4xMjkwM0MyNi41NDE0IDEuMTI5MDMgMzMuODcxIDguNDU4NTcgMzMuODcxIDE3LjVDMzMuODYxIDI2LjUzNzMgMjYuNTM3MyAzMy44NjEgMTcuNSAzMy44NzFaJyBmaWxsPSdibGFjaycvPjxwYXRoIGQ9J00yNS40ODM0IDkuNTE2NjFDMjUuMjYyOSA5LjI5NjI0IDI0LjkwNTYgOS4yOTYyNCAyNC42ODUyIDkuNTE2NjFMMTcuNSAxNi43MDE4TDEwLjMxNDggOS41MTY2MUMxMC4wOTgzIDkuMjkyMzYgOS43NDA4NyA5LjI4NjE1IDkuNTE2NjEgOS41MDI3MUM5LjI5MjM2IDkuNzE5MjcgOS4yODYxNSAxMC4wNzY3IDkuNTAyNzEgMTAuMzAwOUM5LjUwNzIzIDEwLjMwNTcgOS41MTE4OCAxMC4zMTAzIDkuNTE2NjEgMTAuMzE0OEwxNi43MDE4IDE3LjVMOS41MTY2MSAyNC42ODUyQzkuMjkyMzYgMjQuOTAxOCA5LjI4NjE1IDI1LjI1OTEgOS41MDI3OCAyNS40ODM0QzkuNzE5NDEgMjUuNzA3NiAxMC4wNzY4IDI1LjcxMzkgMTAuMzAxIDI1LjQ5NzJDMTAuMzA1NyAyNS40OTI3IDEwLjMxMDMgMjUuNDg4IDEwLjMxNDggMjUuNDgzNEwxNy41IDE4LjI5ODJMMjQuNjg1MiAyNS40ODM0QzI0LjkwOTQgMjUuNyAyNS4yNjY4IDI1LjY5MzggMjUuNDgzNCAyNS40Njk2QzI1LjY5NDcgMjUuMjUwOCAyNS42OTQ3IDI0LjkwMzkgMjUuNDgzNCAyNC42ODUyTDE4LjI5ODIgMTcuNUwyNS40ODM0IDEwLjMxNDhDMjUuNzAzOCAxMC4wOTQ0IDI1LjcwMzggOS43MzcwNSAyNS40ODM0IDkuNTE2NjFaJyBmaWxsPSdibGFjaycvPjwvc3ZnPgo=)
+}
+
+.dnd-upload-status.in-progress .remove-file {
+    opacity: .2
+}
+
+.dnd-upload-status .dnd-upload-details span.has-error {
+    color: #f50505
+}
+
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar {
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #565555;
+    height: 14px
+}
+
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
+    background: #4caf50;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+    color: #fff;
+    height: 100%;
+    width: 0;
+    line-height: 14px
+}
+
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span.complete {
+    width: 100% !important;
+    padding-right: 5px
+}
+
+.dnd-upload-counter {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    font-size: 12px
+}
+
+.codedropz-upload-handler {
+    border: 2px dashed #c5c5c5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative
+}
+
+.codedropz-upload-container {
+    padding: 15px 20px
+}
+
+.codedropz-upload-inner {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-weight: inherit
+}
+
+.codedropz-upload-inner .codedropz-btn-wrap a.cd-upload-btn {
+    text-decoration: none;
+    box-shadow: none
+}
+
+.codedropz-upload-inner h3 {
+    margin: 5px 0;
+    font-size: 30px;
+    line-height: 32px;
+    word-break: break-word
+}
+
+.codedropz-dragover {
+    border-color: #6b6a6a
+}
+
+.codedropz-upload-wrapper span.has-error-msg {
+    display: inline-block;
+    color: red;
+    padding: 5px 0;
+    font-style: italic
+}
+
+.wpcf7-form label.error-new {
+    color: #900;
+    font-size: 11px;
+    float: none;
+    padding-left: 5px
+}
+
+.wpcf7-form .codedropz-upload-wrapper.invalid .codedropz-upload-handler {
+    border-bottom-color: #900;
+    border-bottom-style: solid
+}
+
+@media screen and (max-width:767px) {
+    .dnd-upload-status .dnd-upload-details .name em {
+        font-weight: 400
+    }
+    .dnd-upload-status .dnd-upload-details .name {
+        padding-right: 60px
+    }
+    .codedropz-upload-inner h3 {
+        font-size: 22px
+    }
+}

@@ -1,0 +1,517 @@
+.colio {
+    margin-right: 20px;
+    z-index: 5
+}
+
+.colio-placement-before {
+    margin-bottom: 0
+}
+
+.colio-placement-before.colio-expanded {
+    margin-bottom: 20px
+}
+
+.colio-placement-after {
+    margin-top: 0
+}
+
+.colio .colio-close {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.colio .colio-close:hover {
+    opacity: .8
+}
+
+.colio .colio-close span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    background: url(images/controls.png) no-repeat -48px 0
+}
+
+.colio .colio-navigation a {
+    float: left;
+    padding: 5px;
+    background-color: #fff;
+    -webkit-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    -o-transition: background-color .1s;
+    transition: background-color .1s
+}
+
+.colio .colio-navigation a:hover,
+.colio .colio-no-prev,
+.colio .colio-no-next {
+    background-color: #555 !important
+}
+
+.colio .colio-navigation span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px
+}
+
+.colio .colio-prev span {
+    background: url(images/controls.png) no-repeat 0 0
+}
+
+.colio .colio-next span {
+    background: url(images/controls.png) no-repeat -24px 0
+}
+
+.colio-item .colio-main,
+.colio-item .colio-side {
+    float: left;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.colio-item .colio-main {
+    width: 100%
+}
+
+.colio-item.colio-has-side .colio-main {
+    width: 60%
+}
+
+.colio-item .colio-side {
+    width: 40%
+}
+
+.colio-item.colio-side-slider .colio-main {
+    width: 40%
+}
+
+.colio-item.colio-side-slider .colio-side {
+    width: 60%
+}
+
+.colio-item:after,
+.colio-item .colio-main:after,
+.colio-item .colio-side:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.colio .colio-social {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden
+}
+
+.colio .colio-social li {
+    float: left;
+    margin: 0 7px 7px 0;
+    padding: 0
+}
+
+.colio .colio-social a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    opacity: .7;
+    border-radius: 12px;
+    background-size: 24px 24px !important;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s
+}
+
+.colio .colio-social a:hover {
+    opacity: 1
+}
+
+.colio .colio-social .delicious {
+    background: url(images/social/delicious.png) no-repeat center
+}
+
+.colio .colio-social .digg {
+    background: url(images/social/digg.png) no-repeat center
+}
+
+.colio .colio-social .dribble {
+    background: url(images/social/dribble.png) no-repeat center
+}
+
+.colio .colio-social .ember {
+    background: url(images/social/ember.png) no-repeat center
+}
+
+.colio .colio-social .facebook {
+    background: url(images/social/facebook.png) no-repeat center
+}
+
+.colio .colio-social .flickr {
+    background: url(images/social/flickr.png) no-repeat center
+}
+
+.colio .colio-social .forrst {
+    background: url(images/social/forrst.png) no-repeat center
+}
+
+.colio .colio-social .google {
+    background: url(images/social/google.png) no-repeat center
+}
+
+.colio .colio-social .last_fm {
+    background: url(images/social/last_fm.png) no-repeat center
+}
+
+.colio .colio-social .linkedin {
+    background: url(images/social/linkedin.png) no-repeat center
+}
+
+.colio .colio-social .my_space {
+    background: url(images/social/my_space.png) no-repeat center
+}
+
+.colio .colio-social .quora {
+    background: url(images/social/quora.png) no-repeat center
+}
+
+.colio .colio-social .rss {
+    background: url(images/social/rss.png) no-repeat center
+}
+
+.colio .colio-social .sharethis {
+    background: url(images/social/sharethis.png) no-repeat center
+}
+
+.colio .colio-social .skype {
+    background: url(images/social/skype.png) no-repeat center
+}
+
+.colio .colio-social .stumbleupon {
+    background: url(images/social/stumbleupon.png) no-repeat center
+}
+
+.colio .colio-social .tumblr {
+    background: url(images/social/tumblr.png) no-repeat center
+}
+
+.colio .colio-social .twitter {
+    background: url(images/social/twitter.png) no-repeat center
+}
+
+.colio .colio-social .vimeo {
+    background: url(images/social/vimeo.png) no-repeat center
+}
+
+.colio .colio-social .you_tube {
+    background: url(images/social/you_tube.png) no-repeat center
+}
+
+.colio .colio-feed {
+    padding: 0;
+    margin: 0 0 20px;
+    list-style: none;
+    overflow: hidden
+}
+
+.colio .colio-feed li {
+    float: left;
+    width: 33.33%;
+    height: auto;
+    max-width: 150px;
+    padding: 0 5px 5px 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.colio .colio-feed li a {
+    display: block;
+    outline: none;
+    background: url(images/plus.png) no-repeat center;
+    background-color: #ff5452;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
+.colio .colio-feed img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s
+}
+
+.colio .colio-feed img:hover {
+    opacity: .2
+}
+
+.colio-slider.flexslider {
+    margin: 0 0 20px;
+    background-color: transparent;
+    overflow: hidden
+}
+
+.colio-slider.flexslider ul,
+.colio-slider.flexslider ol {
+    list-style: none !important;
+    margin: 0;
+    padding: 0
+}
+
+.colio-slider.flexslider img {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+.colio-slider.flexslider .flex-direction-nav a {
+    line-height: initial;
+    text-shadow: none;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 80px;
+    margin-top: -30px;
+    outline: none;
+    background-color: #333;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.colio-slider.flexslider .flex-direction-nav .flex-prev {
+    left: 0 !important
+}
+
+.colio-slider.flexslider .flex-direction-nav .flex-next {
+    right: 0 !important
+}
+
+.colio-slider.flexslider .flex-direction-nav a:before {
+    font-size: 20px;
+    line-height: 40px;
+    text-shadow: none;
+    color: #fff;
+    vertical-align: top
+}
+
+.colio-slider.flexslider .flex-control-paging {
+    bottom: 5px;
+    z-index: 10
+}
+
+.colio-slider.flexslider .flex-control-paging li a {
+    width: 10px;
+    height: 10px
+}
+
+.colio-slider.flexslider .flex-caption {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #b93838;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2em;
+    max-width: 65%
+}
+
+.colio-theme-black .colio-container {
+    background-color: #1a1c1e
+}
+
+.colio-theme-black .colio-navigation {
+    top: 40px;
+    left: 60px
+}
+
+.colio-theme-black .colio-navigation a {
+    background-color: #ff5452
+}
+
+.colio-theme-black .colio-item {
+    color: #999
+}
+
+.colio-theme-black .colio-item p {
+    margin: 0 0 20px;
+    color: inherit;
+    line-height: 1.5em
+}
+
+.colio-theme-black .colio-item a,
+.colio-theme-black .colio-item a:visited {
+    color: #ff5452;
+    text-decoration: none
+}
+
+.colio-theme-black .colio-item a:hover {
+    text-decoration: underline
+}
+
+.colio-theme-black .colio-item .colio-title {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #ccc;
+    line-height: 1.3em;
+    text-shadow: none
+}
+
+.colio-theme-black.colio-has-navigation .colio-item {
+    padding-top: 55px
+}
+
+.colio-theme-black .colio-item .colio-subtitle {
+    margin: -10px 0 20px;
+    font-style: italic;
+    font-size: 85%;
+    font-family: times new roman, Times, serif;
+    color: #666
+}
+
+.colio-theme-white .colio-container {
+    border: 1px solid #e0e0e0;
+    background: #eaeaea
+}
+
+.colio-theme-white.colio-has-navigation .colio-container {
+    padding-bottom: 80px
+}
+
+.colio-theme-white .colio-navigation {
+    top: auto;
+    left: auto;
+    right: 35px;
+    bottom: 40px
+}
+
+.colio-theme-white .colio-navigation a {
+    background-color: #47dfff
+}
+
+.colio-theme-white .colio-item {
+    color: #666
+}
+
+.colio-theme-white .colio-item p {
+    color: inherit;
+    margin: 0 0 20px;
+    line-height: 1.5em
+}
+
+.colio-theme-white .colio-item a,
+.colio-theme-white .colio-item a:visited {
+    color: #47dfff;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.colio-theme-white .colio-item a:hover {
+    color: #555
+}
+
+.colio-theme-white .colio-item .colio-title {
+    margin: 5px 0 20px;
+    padding: 0;
+    color: #555;
+    line-height: 1.3em;
+    text-shadow: none
+}
+
+.colio-theme-white .colio-subtitle {
+    position: relative;
+    top: -10px;
+    display: inline-block;
+    background-color: #ccc;
+    padding: 0 10px;
+    margin: 0 0 10px;
+    font-style: italic;
+    font-size: 85%;
+    font-family: times new roman, Times, serif;
+    color: #fff
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) {
+    .colio .colio-prev span {
+        background: url(images/controls@2x.png) no-repeat 0 0;
+        background-size: 120px 24px
+    }
+    .colio .colio-next span {
+        background: url(images/controls@2x.png) no-repeat -24px 0;
+        background-size: 120px 24px
+    }
+    .colio .colio-close span {
+        background: url(images/controls@2x.png) no-repeat -48px 0;
+        background-size: 120px 24px
+    }
+}
+
+@media only screen and (min-width:1280px) {}
+
+@media only screen and (min-width:960px) and (max-width:1280px) {}
+
+@media only screen and (max-width:959px) {}
+
+@media only screen and (min-width:768px) and (max-width:959px) {}
+
+@media only screen and (max-width:767px) {
+    .colio .colio-main,
+    .colio .colio-side {
+        padding: 0;
+        width: 100% !important
+    }
+    .colio .colio-navigation {
+        top: 40px;
+        left: 40px;
+        right: auto;
+        bottom: auto
+    }
+    .colio.colio-has-navigation .colio-item {
+        padding-top: 55px
+    }
+    .colio-theme-white.colio-has-navigation .colio-container {
+        padding-bottom: 40px
+    }
+    .colio .colio-switch-columns .colio-side {
+        margin-top: 20px
+    }
+    .colio.colio-has-navigation .colio-switch-columns .colio-side {
+        margin-top: 0
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {}
+
+@media only screen and (max-width:479px) {
+    .colio {
+        margin-right: 0 !important
+    }
+    .colio .colio-container {
+        padding: 30px !important
+    }
+    .colio .colio-navigation {
+        top: 30px;
+        left: 30px
+    }
+    .colio .colio-feed li {
+        width: 50%
+    }
+}
