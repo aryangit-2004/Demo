@@ -1,45 +1,46 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
 const app = express();
-const path = require('path');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-const notifications = [
-  { id: 1, message: 'New message received', read: false },
-  { id: 2, message: 'Task assigned to you', read: false }
-];
 
-app.use(express.json());
-
-app.get('/notifications', (req, res) => {
-  res.json(notifications);
+mongoose.connect('mongodb://localhost/your_custom_db', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-app.patch('/notifications/:id/read', (req, res) => {
-  const notificationId = parseInt(req.params.id);
-  const notification = notifications.find(n => n.id === notificationId);
+app.use(bodyParser.json());
 
-  if (!notification) {
-    return res.status(404).json({ message: 'Notification not found' });
-  }
+const customNotificationSchema = new mongoose.Schema({
+  message: String,
+  timestamp: Date,
 
-  notification.read = true;
-  res.json({ message: 'Notification marked as read' });
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+const CustomNotification = mongoose.model('CustomNotification', customNotificationSchema);
 
-app.delete('/notifications/:id', (req, res) => {
-  const notificationId = parseInt(req.params.id);
-  const notificationIndex = notifications.findIndex(n => n.id === notificationId);
-
-  if (notificationIndex === -1) {
-    return res.status(404).json({ message: 'Notification not found' });
+app.get('/api/custom-notifications', async (req, res) => {
+  try {
+    const customNotifications = await CustomNotification.find().sort({ timestamp: -1 });
+    res.json(customNotifications);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal server error' });
   }
+});
 
-  notifications.splice(notificationIndex, 1);
-  res.json({ message: 'Notification deleted' });
+app.post('/api/custom-notifications', async (req, res) => {
+  try {
+    const { message } = req.body;
+    const newCustomNotification = new CustomNotification({ message, timestamp: new Date() });
+    await newCustomNotification.save();
+    res.status(201).json(newCustomNotification);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is up and running on port ${port}`);
 });
